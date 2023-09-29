@@ -186,8 +186,8 @@
         ];
     
         var tableSchema = {
-            id: "farmerEngagementFarmers2",
-            alias: "Farmer Engagement Farmers2",
+            id: "farmerEngagementFarmers",
+            alias: "Farmer Engagement Farmers Details",
             columns: cols
         };
     
