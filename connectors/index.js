@@ -119,9 +119,9 @@
                 dataType: tableau.dataTypeEnum.string
             },
             {
-                "id": "loan_id",
-                "alias": "Loan ID",
-                "dataType": tableau.dataTypeEnum.int
+                id: "loan_id",
+                alias: "Loan ID",
+                dataType: tableau.dataTypeEnum.int
             },
             {
                 id: "down_payment_method",
