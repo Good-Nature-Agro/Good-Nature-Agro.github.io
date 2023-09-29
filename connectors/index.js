@@ -119,8 +119,8 @@
                 dataType: tableau.dataTypeEnum.string
             },
             {
-                "id": "id",
-                "alias": "ID",
+                "id": "loan_id",
+                "alias": "Loan ID",
                 "dataType": tableau.dataTypeEnum.int
             },
             {
@@ -234,7 +234,7 @@
                             "pea_name": feat[i].pea_name,
                             "fs_name": feat[i].fs_name,
                             "lfs_name": feat[i].lfs_name,
-                            "id": loanDetails.id,
+                            "loan_id": loanDetails.loan_id,
                             "down_payment_method": loanDetails.down_payment_method,
                             "initial_down_payment_value": loanDetails.initial_down_payment_value,
                             "full_deposit_paid": loanDetails.full_deposit_paid,
