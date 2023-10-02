@@ -4,44 +4,6 @@
 
     // Define the schema
 
-    const farmer =    {
-        "farmer_id": 2548,
-        "status": 1,
-        "first_name": "mwasa",
-        "last_name": "I'mj",
-        "nrc": "5uow",
-        "gender": "female",
-        "phone_number": null,
-        "growing_rating": 1,
-        "team_id": 3669,
-        "farm_location": null,
-        "district_name": "Lunte",
-        "camp_name": "Lubushi",
-        "group_name": "Lubu / Group 3",
-        "team_name": "Lubu / G3 / Team 3",
-        "pea_name": "",
-        "fs_name": "",
-        "lfs_name": "Milimo Chilobya",
-        "loans": [
-            {
-                "id": 59,
-                "down_payment_method": "cash",
-                "initial_down_payment_value": 2,
-                "full_deposit_paid": 0,
-                "package_id": 39,
-                "crop_variety_name": "Lungwebungu",
-                "crop_class_name": "Sugar bean",
-                "package_name": "Lungwebungu Sugar bean - 100 - 0.5ha",
-                "pack_price": "850.00",
-                "pack_size": "20.00",
-                "hectares": "0.50",
-                "cash_repayment": "0.00",
-                "in_kind_repayment": "100.00",
-                "program_name": "SEED - 2023 / 24"
-            }
-        ]
-    };
-
     myConnector.getSchema = function (schemaCallback) {
         var cols = [
             {
@@ -77,6 +39,11 @@
                 id: "farm_location",
                 alias: "Farm Location",
                 dataType: tableau.dataTypeEnum.geometry
+            },
+            {
+                id: "farmer_created_at",
+                alias: "Farmer Created At",
+                dataType: tableau.dataTypeEnum.date
             },
             {
                 id: "growing_rating",
@@ -142,6 +109,11 @@
                 id: "package_id",
                 alias: "Package ID",
                 dataType: tableau.dataTypeEnum.int
+            },
+            {
+                id: "loan_created_at",
+                alias: "Loan Created At",
+                dataType: tableau.dataTypeEnum.date
             },
             {
                 id: "crop_variety_name",
@@ -226,6 +198,7 @@
                             "gender": feat[i].gender,
                             "team_id": feat[i].team_id,
                             "farm_location": feat[i].farm_location,
+                            "farmer_created_at":feat[i].farmer_created_at,
                             "growing_rating": feat[i].growing_rating,
                             "district_name": feat[i].district_name,
                             "camp_name": feat[i].camp_name,
@@ -247,7 +220,8 @@
                             "hectares": parseFloat(loanDetails.hectares),
                             "cash_repayment": parseFloat(loanDetails.cash_repayment),
                             "in_kind_repayment": parseFloat(loanDetails.in_kind_repayment),
-                            "program_name": loanDetails.program_name
+                            "program_name": loanDetails.program_name,
+                            "loan_created_at": loanDetails.loan_created_at
                         });
                     }
     
