@@ -234,6 +234,7 @@
                             "gender": feat[i].gender,
                             "team_id": feat[i].team_id,
                             "farm_location": feat[i].farm_location,
+                            "farmer_created_at":feat[i].farmer_created_at,
                             "growing_rating": feat[i].growing_rating,
                             "district_name": feat[i].district_name,
                             "camp_name": feat[i].camp_name,
