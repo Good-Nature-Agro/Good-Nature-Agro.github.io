@@ -13,7 +13,7 @@
       {
         id: "form_id",
         alias: "Form ID",
-        dataType: tableau.dataTypeEnum.string,
+        dataType: tableau.dataTypeEnum.int,
       },
       {
         id: "formName",
