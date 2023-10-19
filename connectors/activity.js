@@ -157,7 +157,7 @@
 
             tableData.push({
               farmer_id: feat[i].farmer_id,
-              form_id: surveyDetails.form_id,
+              form_id: surveyDetails.formId,
               formName: surveyDetails.formName,
               created_at: surveyDetails.created_at,
               activity_type: questionOneAnswer,
