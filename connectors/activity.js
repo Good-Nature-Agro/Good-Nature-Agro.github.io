@@ -11,6 +11,11 @@
         dataType: tableau.dataTypeEnum.int,
       },
       {
+        id: "form_id",
+        alias: "Form ID",
+        dataType: tableau.dataTypeEnum.string,
+      },
+      {
         id: "formName",
         alias: "Survey Form Name",
         dataType: tableau.dataTypeEnum.string,
@@ -152,6 +157,7 @@
 
             tableData.push({
               farmer_id: feat[i].farmer_id,
+              form_id: surveyDetails.form_id,
               formName: surveyDetails.formName,
               created_at: surveyDetails.created_at,
               activity_type: questionOneAnswer,
