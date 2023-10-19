@@ -163,7 +163,7 @@
             tableData.push({
               farmer_id: feat[i].farmer_id,
               form_id: surveyDetails.formId,
-              submission_id: surveyDetails.submissionId,
+              submission_id: surveyDetails.SubmissionId,
               formName: surveyDetails.formName,
               created_at: surveyDetails.created_at,
               activity_type: questionOneAnswer,
