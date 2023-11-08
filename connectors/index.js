@@ -159,7 +159,12 @@
                 id: "program_name",
                 alias: "Program Name",
                 dataType: tableau.dataTypeEnum.string
-            }
+            },
+            {
+                id: "village_name",
+                alias: "Village Name",
+                dataType: tableau.dataTypeEnum.string
+            },
         ];
     
         var tableSchema = {
@@ -202,6 +207,7 @@
                             "growing_rating": feat[i].growing_rating,
                             "district_name": feat[i].district_name,
                             "camp_name": feat[i].camp_name,
+                            "village_name": feat[i].camp_name,
                             "group_name": feat[i].group_name,
                             "team_name": feat[i].team_name,
                             "pea_name": feat[i].pea_name,
@@ -238,6 +244,7 @@
                             "growing_rating": feat[i].growing_rating,
                             "district_name": feat[i].district_name,
                             "camp_name": feat[i].camp_name,
+                            "village_name": feat[i].camp_name,
                             "group_name": feat[i].group_name,
                             "team_name": feat[i].team_name,
                             "pea_name": feat[i].pea_name,
