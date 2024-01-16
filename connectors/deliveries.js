@@ -55,7 +55,7 @@
   farmerDetailsConnector.getData = function (table, doneCallback) {
     var apiKey = "in2th3GNAweb";
     $.ajax({
-      url: `http://localhost:8082/fe/loans/input-deliveries`,
+      url: `https://api.goodnatureagro.com/fe/loans/input-deliveries`,
       headers: {
         "x-api-key": apiKey,
       },
