@@ -171,8 +171,8 @@
                     if (item.buyback_point) {
                         rowData["buyback_point_id"] = item.buyback_point.id;
                         rowData["buyback_name"] = item.buyback_point.name;
-                        rowData["buyback_latitude"] = item.buyback_point.location.x;
-                        rowData["buyback_longitude"] = item.buyback_point.location.y;
+                        rowData["buyback_latitude"] = item.buyback_point.location.y;
+                        rowData["buyback_longitude"] = item.buyback_point.location.x;
                         rowData["buyback_created_at"] = item.buyback_point.created_at;
                         rowData["buyback_updated_at"] = item.buyback_point.updated_at;
                         rowData["buyback_category"] = item.buyback_point.category || "N/A";
@@ -183,8 +183,8 @@
                     if (item.distribution_point) {
                         rowData["distribution_point_id"] = item.distribution_point.id;
                         rowData["distribution_name"] = item.distribution_point.name;
-                        rowData["distribution_latitude"] = item.distribution_point.location.x;
-                        rowData["distribution_longitude"] = item.distribution_point.location.y;
+                        rowData["distribution_latitude"] = item.distribution_point.location.y;
+                        rowData["distribution_longitude"] = item.distribution_point.location.x;
                         rowData["distribution_created_at"] = item.distribution_point.created_at;
                         rowData["distribution_updated_at"] = item.distribution_point.updated_at;
                         rowData["distribution_category"] = item.distribution_point.category || "N/A";

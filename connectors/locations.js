@@ -75,8 +75,8 @@
                     var rowData = {
                         "id": item.id,
                         "name": item.name,
-                        "latitude": item.location.x,
-                        "longitude": item.location.y,
+                        "latitude": item.location.y,
+                        "longitude": item.location.x,
                         "category": item.category || "N/A", // Use "N/A" if category is not available
                         "details": item.details || "N/A", // Use "N/A" if details are not available
                         "created_at": item.created_at,
