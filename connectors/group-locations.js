@@ -70,16 +70,16 @@
                 alias: "Buyback Longitude",
                 dataType: tableau.dataTypeEnum.float,
             },
-            {
-                id: "buyback_created_at",
-                alias: "Buyback Creation Date",
-                dataType: tableau.dataTypeEnum.datetime,
-            },
-            {
-                id: "buyback_updated_at",
-                alias: "Buyback Update Date",
-                dataType: tableau.dataTypeEnum.datetime,
-            },
+            // {
+            //     id: "buyback_created_at",
+            //     alias: "Buyback Creation Date",
+            //     dataType: tableau.dataTypeEnum.datetime,
+            // },
+            // {
+            //     id: "buyback_updated_at",
+            //     alias: "Buyback Update Date",
+            //     dataType: tableau.dataTypeEnum.datetime,
+            // },
             {
                 id: "buyback_category",
                 alias: "Buyback Category",
@@ -173,8 +173,8 @@
                         rowData["buyback_name"] = item.buyback_point.name;
                         rowData["buyback_latitude"] = item.buyback_point.location.y;
                         rowData["buyback_longitude"] = item.buyback_point.location.x;
-                        rowData["buyback_created_at"] = item.buyback_point.created_at;
-                        rowData["buyback_updated_at"] = item.buyback_point.updated_at;
+                        // rowData["buyback_created_at"] = item.buyback_point.created_at;
+                        // rowData["buyback_updated_at"] = item.buyback_point.updated_at;
                         rowData["buyback_category"] = item.buyback_point.category || "N/A";
                         rowData["buyback_details"] = item.buyback_point.details || "N/A";
                     }
