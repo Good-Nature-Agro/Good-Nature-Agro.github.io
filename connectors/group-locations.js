@@ -185,8 +185,8 @@
                         rowData["distribution_name"] = item.distribution_point.name;
                         rowData["distribution_latitude"] = item.distribution_point.location.y;
                         rowData["distribution_longitude"] = item.distribution_point.location.x;
-                        rowData["distribution_created_at"] = item.distribution_point.created_at;
-                        rowData["distribution_updated_at"] = item.distribution_point.updated_at;
+                        // rowData["distribution_created_at"] = item.distribution_point.created_at;
+                        // rowData["distribution_updated_at"] = item.distribution_point.updated_at;
                         rowData["distribution_category"] = item.distribution_point.category || "N/A";
                         rowData["distribution_details"] = item.distribution_point.details || "N/A";
                     }
