@@ -247,7 +247,7 @@
                             var columnName = answer.question.replace(/[^\w\s]/gi, ''); // Remove special characters
                             var questionNumber = parseInt(answer.question.match(/\d+/)[0]);
                             if (answer.answer && answer.answer.length > 0) {
-                                rowData[questionNumber] = parseInt(answer.answer[0]); // Assuming answers are numeric
+                                rowData[questionNumber] = answer.answer[0]; // Assuming answers are numeric
                             } else {
                                 rowData[questionNumber] = null; // Or handle as needed
                             }
