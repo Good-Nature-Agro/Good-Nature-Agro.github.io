@@ -214,7 +214,7 @@
         var formID = 35;
 
         $.ajax({
-            url: `https://api.goodnatureagro.com/fe/surveys/loans/${formID}`,
+            url: `https://api.goodnatureagro.com/fe/surveys/farmers/${formID}`,
             headers: {
                 "x-api-key": apiKey,
             },
